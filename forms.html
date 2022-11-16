@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Forms</title>
+</head>
+<body class="blue-grey darken-1">
+    <div class="navbar-fixed">
+        <nav class="transparent">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index3.html" class="brand-logo">CWD Batch 6</a>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="index3.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+<!-- Date Picker -->
+    <div class="container">
+        <h3 class="blue-text">Picker</h3>
+        <h5 class="grey-text">Date Picker</h5>
+        <div class="form">
+            <div class="input-field">
+                <input type="text" class="datepicker">
+                <label for="date" class="white-text">Date</label>
+            </div>
+        </div>
+    </div>
+
+<!-- Time Picker -->
+    <div class="container">
+        <h5 class="grey-text">Time Picker</h5>
+        <div class="form">
+            <div class="input-field">
+                <input type="text" class="timepicker">
+                <label for="time" class="white-text">Time</label>
+            </div>
+        </div>
+    </div>
+
+<!-- Chips -->
+<section class="white">
+    <div class="container">
+        <h3 class="blue-text">Chips</h3>
+        <h5 class="grey-text">Contacts and Tags</h5>
+    <div class="chip green-text">
+        <img src="images/img.png" alt="Contact Person">
+        Jane Doe
+    </div>
+    <div class="chip green-text">
+        Tag
+        <i class="close material-icons">close</i>
+    </div>
+    </div>
+<br><br>
+</section>
+
+<!-- Radio Buttons -->
+<section class="white">
+    <div class="container">
+        <h3 class="blue-text">Radio Button</h3>
+        <form action="#">
+            <p>
+            <label>
+                <input name="group1" type="radio" checked />
+                <span class="red-text">Red</span>
+            </label>
+            </p>
+            <p>
+            <label>
+                <input name="group1" type="radio" />
+                <span class="yellow-text">Yellow</span>
+            </label>
+            </p>
+            <p>
+            <label>
+                <input class="with-gap" name="group1" type="radio"  />
+                <span class="green-text">Green</span>
+            </label>
+            </p>
+            <p>
+            <label>
+                <input name="group1" type="radio" disabled="disabled" />
+                <span class="brown-text">Brown</span>
+            </label>
+            </p>
+        </form>
+    </div>
+    <br>
+</section>
+
+<div style="height: 100px;"></div>
+
+<!-- Footer -->
+<footer class="page-footer grey lighten-2">
+
+</footer>
+
+<!-- Jquery CDN -->
+<script
+src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https:cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    // datepicker
+    $('.datepicker').datepicker();
+    // timepicker
+    $('.timepicker').timepicker();
+});
+</script>
+</body>
+</html>
